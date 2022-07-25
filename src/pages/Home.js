@@ -53,6 +53,7 @@ class Home extends Component {
       headers: {
         "Content-Type": "application/json"
       }
+      withCredentials: true
     }).then(res => {
         console.log(res.data.message);
     });
